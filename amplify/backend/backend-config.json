@@ -1,0 +1,16 @@
+{
+  "auth": {
+    "showbizzzbd11acac": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  },
+  "storage": {
+    "usersImages": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation"
+    }
+  }
+}

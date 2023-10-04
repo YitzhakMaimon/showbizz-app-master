@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "name": "showbizzz",
+    "slug": "showbizzz",
+    "privacy": "unlisted",
+    "version": "0.0.23",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow showbizzz to access your photos to let you choose photos to upload to the system"
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow showbizzz to access your photos to let you choose photos to upload to the system",
+          "savePhotosPermission": "Allow showbizzz to save photos that will be showed in your'e profile",
+          "isAccessMediaLocationEnabled": "true"
+        }
+      ]
+    ],
+    "splash": {
+      "image": "./assets/splash.png",
+      "backgroundColor": "#1b1b1b"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.showbizzz.showbizzz",
+      "infoPlist": {
+        "NSCameraUsageDescription": "showbizzz requires access to your camera to let you add pictures to upload to your profile gallery and to change your profile picture",
+        "NSPhotoLibraryUsageDescription": "showbizzz requires access to the photo library to upload your profile photo",
+        "NSPhotoLibraryAddUsageDescription": "showbizzz needs to access your camera roll so that you can upload images"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#1b1b1b"
+      },
+      "versionCode": 7,
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "package": "com.showbizzz.showbizzz"
+    },
+    "web": {
+      "favicon": "./assets/icon.png"
+    }
+  }
+}

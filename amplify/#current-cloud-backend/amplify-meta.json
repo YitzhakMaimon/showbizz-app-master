@@ -1,0 +1,55 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-showbizzz-prod-214359-authRole",
+      "UnauthRoleArn": "arn:aws:iam::204698734644:role/amplify-showbizzz-prod-214359-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::204698734644:role/amplify-showbizzz-prod-214359-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-showbizzz-prod-214359-deployment",
+      "UnauthRoleName": "amplify-showbizzz-prod-214359-unauthRole",
+      "StackName": "amplify-showbizzz-prod-214359",
+      "StackId": "arn:aws:cloudformation:eu-central-1:204698734644:stack/amplify-showbizzz-prod-214359/dad9d530-bbf6-11eb-8a86-0aa7f73eea38",
+      "AmplifyAppId": "d32o7tq7a6gxw",
+      "AuthTriggerTemplateURL": ""
+    }
+  },
+  "auth": {
+    "showbizzzbd11acac": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-showbizzz-prod-214359-deployment/amplify-cfn-templates/auth/showbizzzbd11acac-cloudformation-template.yml",
+        "logicalId": "authshowbizzzbd11acac"
+      },
+      "lastPushTimeStamp": "2021-05-25T21:16:40.340Z",
+      "output": {
+        "UserPoolId": "eu-central-1_O7ki30pfV",
+        "AppClientIDWeb": "39nafsjlhp2fbr0k1va4uvhn8m",
+        "AppClientID": "7oq0bhj9mmr90oqaeku0psjuaq",
+        "IdentityPoolId": "eu-central-1:97483b1e-28b9-46a3-bc55-ccbf2ee909f0",
+        "UserPoolArn": "arn:aws:cognito-idp:eu-central-1:204698734644:userpool/eu-central-1_O7ki30pfV",
+        "IdentityPoolName": "showbizzzbd11acac_identitypool_bd11acac__prod",
+        "UserPoolName": "showbizzzbd11acac_userpool_bd11acac"
+      },
+      "lastPushDirHash": "vIy9EcIe8tTmmv1F7RBRP75tiag="
+    }
+  },
+  "storage": {
+    "usersImages": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-showbizzz-prod-214359-deployment/amplify-cfn-templates/storage/s3-cloudformation-template.json",
+        "logicalId": "storageusersImages"
+      },
+      "lastPushTimeStamp": "2021-05-25T21:16:40.340Z",
+      "output": {
+        "BucketName": "showbizzz78e21b69aad340968a87057c0f4d287a214359-prod",
+        "Region": "eu-central-1"
+      },
+      "lastPushDirHash": "UaLGalP3jcAKzwAfjxq6bw+U6Lo="
+    }
+  }
+}
